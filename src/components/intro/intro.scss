@@ -3,7 +3,8 @@
 .intro {
   background-color: rgb(233, 188, 195);
   display: flex;
-  
+  padding-top: 10px;
+
 
   @include mobile{
     flex-direction: column;
