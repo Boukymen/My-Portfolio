@@ -15,7 +15,7 @@ export default function Testimonials() {
     {
       id: 2,
       name: "KONATE Bakary",
-      title: "Co-Founder of BoukyTech",
+      title: "CEO of BoukyTech",
       img:
         "assets/man6.jpg",
       icon: "assets/youtube.png",
@@ -26,7 +26,7 @@ export default function Testimonials() {
     {
       id: 3,
       name: "Martin Harold",
-      title: "CEO of ALBI",
+      title: "Co-Founder of BoukyTech",
       img:
         "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/linkedin.png",

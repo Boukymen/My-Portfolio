@@ -37,7 +37,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
+      
 
       h2{
         font-size: 30px;
@@ -51,7 +51,10 @@
         align-items: center;
         justify-content:space-around;
 
-
+        @include mobile{
+          position: absolute;
+          margin-top: -10px;
+        }
         input{
           width: 300px;
           height: 30px;
@@ -59,6 +62,7 @@
 
           @include mobile{
             width: 200px;
+            margin-top: -40px;
             height: 20px;
 
           }
@@ -71,7 +75,8 @@
 
           @include mobile{
             width: 200px;
-            height: 100px;
+            margin-top: -180px;
+            height: 80px;
 
           }
         }
@@ -85,6 +90,10 @@
           border-radius: 10px;
           font-weight: 500;
           cursor: pointer;
+          @include mobile{
+            // padding-bottom: 80px;
+            
+          }
           
           &:focus{
             outline: none;

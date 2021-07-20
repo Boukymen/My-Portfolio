@@ -30,7 +30,7 @@
       align-items:center;
 
       .logo{
-        max-width: 85%;
+        max-width: 22%;
         height: auto;
         position: relative;
         transition: all 1s ease;
@@ -40,7 +40,7 @@
           transform: scale(1.1);
         }
         @include mobile{
-          max-width: 70%;
+          max-width: 35%;
         }
       }
       .itemContainer {
@@ -73,7 +73,7 @@
         justify-content:space-between;
         cursor: pointer;
         @include mobile{
-          width: 22px ;
+          width: 52px ;
           height: 20px ;
           
         }
@@ -101,7 +101,7 @@
           transform: rotate(45deg);
 
           @include mobile{
-            transform: rotate(50deg);
+            transform: rotate(40deg);
           }
 
         }
@@ -112,7 +112,7 @@
           background-color: white;
           transform: rotate(-45deg);
           @include mobile{
-            transform: rotate(-50deg);
+            transform: rotate(-40deg);
           }
         }
 
