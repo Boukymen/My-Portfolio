@@ -18,7 +18,7 @@
   }
 
   .wrapper{
-    padding: 10px 30px;
+    padding: 5px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,25 +28,34 @@
     .left{
       display: flex;
       align-items:center;
+      // justify-content: space-between;
+      .into{
+        
+        width: 65%;
+        .logo{
+          max-width: 25%;
+          height: auto;
+          position: relative;
+          transition: all 1s ease;
+          overflow: hidden;
 
-      .logo{
-        max-width: 22%;
-        height: auto;
-        position: relative;
-        transition: all 1s ease;
-        overflow: hidden;
-
-        &:hover{
-          transform: scale(1.1);
+          &:hover{
+            transform: scale(1.1);
+          }
+          @include mobile{
+            max-width: 120px;
+          }
         }
         @include mobile{
-          max-width: 35%;
+          width: 100%;
         }
       }
       .itemContainer {
         display: flex;
         align-items:center;
-        margin-left: 30px;
+        // margin: 30px;
+        // margin-left: 30px;
+        padding-right: 10px;
 
         @include mobile{
           display: none;
@@ -60,15 +69,19 @@
         span{
           font-size: 15px;
           font-weight: 400;
+
         }
       }
     }
     .right{
+      min-width:10%;
+      max-width: 20%;
 
       .hamburger{
         width: 32px ;
         height: 25px ;
         display: flex;
+        margin-left: 40px;
         flex-direction: column;
         justify-content:space-between;
         cursor: pointer;

@@ -12,11 +12,13 @@
     padding-top: 30px;
     position: absolute;
     // width: 100%;
-    left: 48%;
+    left: 45%;
     height: 20%;
     font-size: 50px;
 
     @include mobile{
+      padding-top: 20px;
+      left: 40%;
       font-size: 20px;
       height: 10%;
     }
@@ -37,7 +39,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      
+      @include mobile{
+        margin-bottom: 100px;
+      }
 
       h2{
         font-size: 30px;
@@ -45,7 +49,7 @@
 
       form{
         width: 70% ;
-        height:70% ;
+        height:50% ;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,7 +57,7 @@
 
         @include mobile{
           position: absolute;
-          margin-top: -10px;
+          height:30% ;
         }
         input{
           width: 300px;
@@ -62,7 +66,7 @@
 
           @include mobile{
             width: 200px;
-            margin-top: -40px;
+            // margin-top: -40px;
             height: 20px;
 
           }
@@ -75,7 +79,7 @@
 
           @include mobile{
             width: 200px;
-            margin-top: -180px;
+            // margin-top: -180px;
             height: 80px;
 
           }

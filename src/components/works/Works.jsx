@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import './works.scss'
 export default function Works() {
 
@@ -6,7 +6,7 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
+      icon: "./assets/globe.png",
       title: "Web Design",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
@@ -15,7 +15,7 @@ export default function Works() {
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
+      icon: "./assets/mobile.png",
       title: "Mobile Application",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -34,9 +34,21 @@ export default function Works() {
 
   ];
 
-  const handleClick = (way) => {
+  const handleClick = useCallback((way) => {
     way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2 ) : setCurrentSlide(currentSlide < data.length-1 ? currentSlide+1 : 0 ) 
-  }
+  }, [setCurrentSlide, data.length, currentSlide])
+
+  
+  useEffect(() => {
+    console.log(window.screen.width);
+    if(window.screen.width > 765){
+      const timer = setTimeout(() => {
+        handleClick();
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [handleClick]);
+
   return (
     <div className="works" id="works">
       <div className="slider" style= {{transform: `translateX(-${currentSlide * 100}vw)`}}>
