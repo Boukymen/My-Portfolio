@@ -9,16 +9,17 @@ export default function Topbar({menuOpen, setMenuOpen}) {
           <a href="#intro" className="into" >
             <img className="logo" src="assets/logo.png" alt="BoukyTech"/>
           </a>
+
+        </div>
+        <div className="right">
           <div className="itemContainer">
-            <Person  className="icon"/>
-            <span> +33 658 77 69 72</span>
-          </div>
+          <Person  className="icon"/>
+          <span> +212 6 999 06 595</span>
+        </div>
           <div className="itemContainer">
             <Mail  className="icon"/>
             <span> boukymen@gmail.com</span>
           </div>
-        </div>
-        <div className="right">
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>

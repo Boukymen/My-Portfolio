@@ -4,10 +4,10 @@ export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
+      name: "Toure Aboubacar",
       title: "Senior Developer",
       img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
       icon: "assets/twitter.png",
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
@@ -20,15 +20,16 @@ export default function Testimonials() {
         "assets/man6.jpg",
       icon: "assets/youtube.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Ingénieur en informatique avec plus de trois ans d’expérience, j’interviens pour tous vos besoins d’analyses, " +
+          "de conceptions et de mise en œuvre de logiciels, d’application, Web ou mobile.",
       featured: true,
     },
     {
       id: 3,
-      name: "Martin Harold",
+      name: "Keita Moctar",
       title: "Co-Founder of BoukyTech",
       img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://1fid.com/wp-content/uploads/2022/06/no-profile-picture-11-720x720.jpg",
       icon: "assets/linkedin.png",
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
