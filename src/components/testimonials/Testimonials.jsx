@@ -7,21 +7,20 @@ export default function Testimonials() {
       name: "Toure Aboubacar",
       title: "Senior Developer",
       img:
-        "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
+        "https://1fid.com/wp-content/uploads/2022/06/no-profile-picture-11-720x720.jpg",
       icon: "assets/twitter.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        " I bring extensive experience and expertise in software development to the table. I have a proven track record of designing and building complex software solutions that align with business objectives.",
     },
     {
       id: 2,
       name: "KONATE Bakary",
       title: "CEO of BoukyTech",
       img:
-        "assets/man6.jpg",
+        "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
       icon: "assets/youtube.png",
       desc:
-        "Ingénieur en informatique avec plus de trois ans d’expérience, j’interviens pour tous vos besoins d’analyses, " +
-          "de conceptions et de mise en œuvre de logiciels, d’application, Web ou mobile.",
+        "I bring visionary leadership, technical expertise, and a passion for innovation to the helm. With a deep understanding of industry trends and emerging technologies, I steer the company towards delivering cutting-edge solutions that empower businesses to thrive in the digital age. ",
       featured: true,
     },
     {
@@ -29,10 +28,10 @@ export default function Testimonials() {
       name: "Keita Moctar",
       title: "Co-Founder of BoukyTech",
       img:
-        "https://1fid.com/wp-content/uploads/2022/06/no-profile-picture-11-720x720.jpg",
+        "https://st.depositphotos.com/2101611/3925/v/450/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg",
       icon: "assets/linkedin.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+        "I am a visionary leader with a passion for innovation and technology. With a strong background in software development and a commitment to excellence, I co-established our company to create cutting-edge solutions that solve complex business challenges.",
     },
   ];
   return (

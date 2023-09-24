@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import PortfolioList from '../portfolioList/PortfolioList'
 import './portfolio.scss'
-import {  featuredPortfolio, 
-          webPortfolio, 
+import {  featuredPortfolio,
+          webPortfolio,
           mobilePortfolio,
-          designPortfolio, 
+          designPortfolio,
           contentPortfolio} from '../../data';
 
 export default function Portfolio() {
@@ -52,29 +52,32 @@ export default function Portfolio() {
         setData(contentPortfolio);
         break;
       default:
-        setData(featuredPortfolio);                 
+        setData(featuredPortfolio);
     }
 
   },[selected])
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portofolio</h1>
       <ul>
        {list.map((item) => {
-         return <PortfolioList 
-         key={item.id} 
+         return <PortfolioList
+         key={item.id}
          id={item.id}
-         title= {item.title} 
-         active ={selected === item.id} 
+         title= {item.title}
+         active ={selected === item.id}
          setSelected= {setSelected} />
        })}
       </ul>
       <div className="container">
         {data.map((d)=>(
-          <div key={d.id} className="item">
-            <img src={d.img} alt={d.title} />
-            <h3>{d.title}</h3>
-          </div>
+            <a href="#contact" style={{ textDecoration: "none"}}>
+              <div key={d.id} className="item">
+                <img src={d.img} alt={d.title} />
+                <h3>{d.title}</h3>
+              </div>
+            </a>
         ))}
       </div>
     </div>
