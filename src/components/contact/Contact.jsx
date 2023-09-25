@@ -15,7 +15,7 @@ export default function Contact() {
         } else {
             try{
 
-                const res = await fetch(`${process.env.API_ROOT_DOMAIN}/verify`, {
+                const res = await fetch(`${process.env.REACT_APP_API_ROOT_DOMAIN}/verify`, {
                     method: "POST",
                     body: JSON.stringify({captchaValue}),
                     headers: {
@@ -59,7 +59,7 @@ export default function Contact() {
                     <input required type="name" placeholder="Name" name="name" style={{borderRadius: 10, padding: 2}}/>
                     <textarea className="text" required placeholder="Enter your message here..."
                               style={{borderRadius: 10, padding: 2}} name="message"></textarea>
-                    <ReCAPTCHA ref={recaptcha} sitekey={process.env.REACT_APP_SITE_KEY}/>
+                    <ReCAPTCHA ref={recaptcha} sitekey={process.env.REACT_APP_REACT_APP_SITE_KEY}/>
                     <button type="submit" className="btn"> Send</button>
                     {message && <span>Thanks, I'll reply ASAP 😊</span>}
                 </form>
