@@ -28,8 +28,8 @@ export default function Contact() {
                 if (data.success) {
                     // make form submission
                     setMessage(true)
-                    emailjs.init('REACT_APP_EMAILJS_PUBLIC_KEY');
-                    emailjs.sendForm('service_ylit6pf', 'template_b872x3o', event.target)
+                    emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+                    emailjs.sendForm('service_ylit6pf', 'template_b872x3o', event.target, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
                         .then((result) => {
                             console.log(result.text);
                         }, (error) => {
