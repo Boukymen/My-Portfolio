@@ -3,6 +3,8 @@
 .contact {
   background-color: white;
   display: flex;
+  width: 100%;
+  height: 100%;
 
   @include mobile{
     flex-direction: column;
@@ -96,9 +98,9 @@
           cursor: pointer;
           @include mobile{
             // padding-bottom: 80px;
-            
+
           }
-          
+
           &:focus{
             outline: none;
           }
