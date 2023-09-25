@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react'
 import './contact.scss';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
@@ -28,7 +28,8 @@ export default function Contact() {
                 if (data.success) {
                     // make form submission
                     setMessage(true)
-                    emailjs.sendForm('service_ylit6pf', 'template_b872x3o', event.target, 'user_fBgdUIWbhaeRSN60VMbW2')
+                    emailjs.init('REACT_APP_EMAILJS_PUBLIC_KEY');
+                    emailjs.sendForm('service_ylit6pf', 'template_b872x3o', event.target)
                         .then((result) => {
                             console.log(result.text);
                         }, (error) => {
@@ -36,6 +37,7 @@ export default function Contact() {
                         });
 
                     event.target.reset();
+                    
                 } else {
                     alert("reCAPTCHA validation failed!");
                 }
