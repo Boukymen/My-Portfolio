@@ -17,7 +17,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man.png" alt="CEO" />
+          <img src="assets/boukytech.png" alt="CEO" />
         </div>
       </div>
 

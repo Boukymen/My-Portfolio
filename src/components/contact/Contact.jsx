@@ -5,7 +5,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
     const recaptcha = useRef();
-    // const [name, setName] = useState("");
   const [message, setMessage] = useState(false);
 
     async function submitForm(event) {
@@ -48,6 +47,7 @@ export default function Contact() {
       <div className="right">
         <form onSubmit={submitForm}>
           <input required type="email" placeholder="Email" name="email" />
+          <input required type="name" placeholder="Name" name="name" />
           <textarea className="text" required placeholder="Enter your message here" name="message"></textarea>
             <ReCAPTCHA ref={recaptcha} sitekey={process.env.REACT_APP_SITE_KEY} />
             <button type="submit" className="btn"> Send </button>

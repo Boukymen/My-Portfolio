@@ -41,7 +41,6 @@ export default function Works() {
 
 
   useEffect(() => {
-    console.log(window.screen.width);
     if(window.screen.width > 765){
       const timer = setTimeout(() => {
         handleClick();

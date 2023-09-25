@@ -61,9 +61,9 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>Portofolio</h1>
       <ul>
-       {list.map((item) => {
+       {list.map((item, id) => {
          return <PortfolioList
-         key={item.id}
+         key={id}
          id={item.id}
          title= {item.title}
          active ={selected === item.id}
@@ -71,9 +71,9 @@ export default function Portfolio() {
        })}
       </ul>
       <div className="container">
-        {data.map((d)=>(
-            <a href="#contact" style={{ textDecoration: "none"}}>
-              <div key={d.id} className="item">
+        {data.map((d, id)=>(
+            <a href="#contact" style={{ textDecoration: "none"}} key={id}>
+              <div  className="item">
                 <img src={d.img} alt={d.title} />
                 <h3>{d.title}</h3>
               </div>
