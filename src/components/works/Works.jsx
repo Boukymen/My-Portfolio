@@ -53,9 +53,9 @@ export default function Works() {
   return (
     <div className="works" id="works">
       <div className="slider" style= {{transform: `translateX(-${currentSlide * 100}vw)`}}>
-        {data.map((d)=> (
+        {data.map((d, id)=> (
 
-          <div key={d.id} className="container">
+          <div key={id} className="container">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -64,7 +64,7 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <a href="https://github.com/Boukymen" target="_blank">
+                  <a href="https://github.com/Boukymen" target="_blank" rel="noreferrer" >
                     <span>Project</span>
                   </a>
                 </div>
