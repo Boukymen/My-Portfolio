@@ -37,7 +37,7 @@ export default function Contact() {
                         });
 
                     event.target.reset();
-                    
+
                 } else {
                     alert("reCAPTCHA validation failed!");
                 }
@@ -55,7 +55,7 @@ export default function Contact() {
             </div>
 
             <div className="right">
-                <form onSubmit={submitForm} style={{height: "500px",}}>
+                <form onSubmit={submitForm} style={{height: "500px", width: "100%"}}>
                     <input required type="email" placeholder="Email" name="email"
                            style={{borderRadius: 10, padding: 2}}/>
                     <input required type="name" placeholder="Name" name="name" style={{borderRadius: 10, padding: 2}}/>
